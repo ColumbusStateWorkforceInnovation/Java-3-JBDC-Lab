@@ -35,15 +35,13 @@ create table orders (
 id INT(9) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 employee_id INT(9) UNSIGNED NOT NULL,
 customer_id INT(9) UNSIGNED NOT NULL,
-store_number VARCHAR(30) NOT NULL,
-order_datetime DATETIME NOT NULL
+store_number VARCHAR(30) NOT NULL
 );
 
 create table order_line_items (
 id INT(9) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 order_id INT(9) UNSIGNED NOT NULL,
-rental_id INT(9) UNSIGNED NOT NULL,
-due_datetime DATETIME NOT NULL
+rental_id INT(9) UNSIGNED NOT NULL
 );
 
 alter table orders add FOREIGN KEY (employee_id) REFERENCES employees(id);
