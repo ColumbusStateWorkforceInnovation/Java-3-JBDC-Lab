@@ -48,3 +48,28 @@ alter table orders add FOREIGN KEY (employee_id) REFERENCES employees(id);
 alter table orders add FOREIGN KEY (customer_id) REFERENCES customers(id);
 alter table order_line_items add FOREIGN KEY (order_id) REFERENCES orders(id);
 alter table order_line_items add FOREIGN KEY (rental_id) REFERENCES rentals(id);
+
+insert into employees (first_name, last_name, active_store_number)
+values ('Wynter', 'Miller', '39458');
+insert into employees (first_name, last_name, active_store_number)
+values ('Max', 'Daniels', '39123');
+insert into employees (first_name, last_name, active_store_number)
+values ('Bob', 'Deal', '39458');
+
+insert into customers (first_name, last_name, smart_id)
+values ('Marlon', 'Hames', '239458010408');
+insert into customers (first_name, last_name, smart_id)
+values ('Liz', 'Dibbert', '23945808497');
+insert into customers (first_name, last_name, smart_id)
+values ('Ladonna', 'Lueilwitz', '23945804444');
+insert into customers (first_name, last_name, smart_id)
+values ('Leon', 'Conroy', '23912310000');
+
+insert into rentals(name, rental_type, category, year, director, num_available)
+values ('The Shawshank Redemption', 'dvd', 'drama', 1994, 'Frank Darabont', 15);
+insert into rentals(name, rental_type, category, year, director, num_available)
+values ('Star Wars: A New Hope', 'dvd', 'adventure', 1976, 'George Lucas', 3);
+insert into rentals(name, rental_type, category, year, director, num_available)
+values ('The Godfather', 'bluray', 'drama', 1972, 'Francis Ford Coppola', 6);
+insert into rentals(name, rental_type, category, year, director, num_available)
+values ('The Lord of the Rings: The Return of the King', 'dvd', 'fantasy', 2003, 'Peter Jackson', 12);
