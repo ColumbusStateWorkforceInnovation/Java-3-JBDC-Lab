@@ -16,7 +16,7 @@ public class HomeIndexView extends ApplicationView {
         System.out.println("Welcome to Lackluster Video");
         System.out.println("1. Manage Orders");
         System.out.println("2. Exit");
-        System.out.print("Choice: ");
+        System.out.println("Choice: ");
         Scanner scanner = new Scanner(System.in);
         try {
             int choice = scanner.nextInt();

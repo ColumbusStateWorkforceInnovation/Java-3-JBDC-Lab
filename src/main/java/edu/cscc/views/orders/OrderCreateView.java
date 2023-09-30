@@ -14,10 +14,10 @@ public class OrderCreateView extends ApplicationView {
     public void show() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Create Order:");
-        System.out.print("Employee id: ");
+        System.out.println("Employee id: ");
         Integer employeeId = scanner.nextInt();
 
-        System.out.print("Customer ID: ");
+        System.out.println("Customer ID: ");
         Integer customerId = scanner.nextInt();
 
         List<Integer> rentalIds = new ArrayList<>();
