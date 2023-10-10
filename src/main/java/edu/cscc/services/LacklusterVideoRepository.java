@@ -3,7 +3,6 @@ package edu.cscc.services;
 import edu.cscc.exceptions.LacklusterVideoServiceException;
 import edu.cscc.models.Order;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 public interface LacklusterVideoRepository {

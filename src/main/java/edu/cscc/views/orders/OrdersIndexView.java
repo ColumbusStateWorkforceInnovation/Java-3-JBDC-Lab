@@ -28,7 +28,7 @@ public class OrdersIndexView extends ApplicationView {
         System.out.println("1. Create order");
         System.out.println("2. Delete all orders");
         System.out.println("3. Home");
-        System.out.print("Choice: ");
+        System.out.println("Choice: ");
         Scanner scanner = new Scanner(System.in);
         try {
             int choice = scanner.nextInt();
